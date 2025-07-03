@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0px 0px 0px;
+}
+
+.base-container {
+    display: grid;
+    grid-template-areas:
+    'header section'
+    'main section';
+    gap: 20px;
+    background-color: aqua;
+    width: 70%;
+    height: 70svh;
+    border-radius: 8px;
+    padding: 20px;
+    
+
+}
+
+#title {
+    grid-area: header;
+    background-color: bisque;
+    text-align: center;
+    
+}
+
+#register {
+    grid-area: main;
+    background-color: chocolate;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#log {
+    grid-area: section;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: blueviolet;
+}
+
+#questActive {
+    background-color: brown;
+}
+
+#questFinished {
+    background-color: cadetblue;
+}

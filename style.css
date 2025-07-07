@@ -77,13 +77,13 @@ form {
 }
 
 #log {
+    overflow: auto;
     grid-area: section;
-    display: flex;
+    display: grid;
+    grid-template-areas: 1fr;
     justify-content: space-evenly;
     gap: 20px;
-    /*background-color: blueviolet;*/
     font-family: breathOfFire;
     font-size: 60px;
-    text-align: center;
-    
+    text-align: center;    
 }

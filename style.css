@@ -8,6 +8,11 @@
     src: url(fonts/BreatheFire-65pg.ttf);
 }
 
+@font-face {
+    font-family: eagleLake;
+    src: url(fonts/EagleLake-Regular.ttf);
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -22,7 +27,7 @@ body {
     grid-template-areas:
     'header section'
     'main section';
-    gap: 20px;
+    gap: 16px;
     background-image: url(images/wooden-floor-background.jpg);
     background-position: center;
     background-size: cover;
@@ -46,15 +51,24 @@ h1 {
 }
 
 #title p {
-    font-family: breathOfFire;
-    font-size: 40px;
+    font-family: eagleLake;
+    font-size: 24px;
 }
 
 #register {
     grid-area: main;
-    background-color: chocolate;
+    /*background-color: chocolate;*/
     text-align: center;
+    font-family: eagleLake;
+    padding: 10px 10px 10px 10px;
 }
+
+#register h2 {
+    font-family: breathOfFire;
+    font-size: 36px;
+}
+
+
 
 form {
     display: flex;
@@ -67,13 +81,9 @@ form {
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
-    background-color: blueviolet;
-}
-
-#questActive {
-    background-color: brown;
-}
-
-#questFinished {
-    background-color: cadetblue;
+    /*background-color: blueviolet;*/
+    font-family: breathOfFire;
+    font-size: 60px;
+    text-align: center;
+    
 }

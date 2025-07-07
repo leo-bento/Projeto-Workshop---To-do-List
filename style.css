@@ -1,7 +1,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 80px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
 }
 
 .base-container {
@@ -10,9 +10,13 @@ body {
     'header section'
     'main section';
     gap: 20px;
+    background-image: url(images/background-book.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: aqua;
     width: 70%;
-    height: 70svh;
+    height: 90svh;
     border-radius: 8px;
     padding: 20px;
     

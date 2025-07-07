@@ -1,7 +1,20 @@
+@font-face {
+    font-family: breathOfFireIII;
+    src: url(fonts/BreatheFireIii-PKLOB.ttf);
+}
+
+@font-face {
+    font-family: breathOfFire;
+    src: url(fonts/BreatheFire-65pg.ttf);
+}
+
 body {
     display: flex;
     justify-content: center;
     margin: 40px 0px 0px 0px;
+    background-image: url(images/brown-brick-wall-surface-texture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .base-container {
@@ -10,24 +23,31 @@ body {
     'header section'
     'main section';
     gap: 20px;
-    background-image: url(images/background-book.png);
+    background-image: url(images/wooden-floor-background.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: aqua;
-    width: 70%;
+    width: 60%;
     height: 90svh;
     border-radius: 8px;
     padding: 20px;
-    
 
 }
 
 #title {
     grid-area: header;
-    background-color: bisque;
     text-align: center;
-    
+
+}
+
+h1 {
+    font-family: breathOfFireIII;
+    font-size: 100px;
+}
+
+#title p {
+    font-family: breathOfFire;
+    font-size: 40px;
 }
 
 #register {

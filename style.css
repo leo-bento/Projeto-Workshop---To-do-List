@@ -27,7 +27,8 @@ body {
     grid-template-areas:
     'header section'
     'main section';
-    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
     background-image: url(images/wooden-floor-background.jpg);
     background-position: center;
     background-size: cover;
@@ -57,7 +58,6 @@ h1 {
 
 #register {
     grid-area: main;
-    /*background-color: chocolate;*/
     text-align: center;
     font-family: eagleLake;
     padding: 10px 10px 10px 10px;
@@ -68,8 +68,6 @@ h1 {
     font-size: 36px;
 }
 
-
-
 form {
     display: flex;
     flex-direction: column;
@@ -79,11 +77,27 @@ form {
 #log {
     grid-area: section;
     display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-    /*background-color: blueviolet;*/
-    font-family: breathOfFire;
-    font-size: 60px;
+    flex-direction: column;
+    gap: 10px;
     text-align: center;
     
+}
+
+#log h2 {
+    font-family: breathOfFire;
+    font-size: 80px;
+}
+
+ul li {
+    font-family: eagleLake;
+    font-size: 36px;
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul span {
+    font-family: eagleLake;
+    font-size: 20px;
 }

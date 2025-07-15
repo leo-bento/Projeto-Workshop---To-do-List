@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -22,15 +23,28 @@
                 <label for="titulo">Título</label>
                 <input style="text-align: center;" type="text" id="titulo" placeholder="O que voce quer fazer?">
                 <label for="descricao">Descrição</label>
-                <input style="text-align: center;" type="text" id="descricao"
-                    placeholder="Como voce quer fazer?"></input>
-                <button type="submit">Criar nova tarefa</button>
+                <input style="text-align: center;" type="text" id="descricao" placeholder="Como voce quer fazer?">
+                <button type="submit" onclick="addTask()">Aceitar nova Quest</button>
+                
             </form>
         </div>
         <div class="container" id="log">
             <h2>Quest Ativas</h2>
+            <ul id="list-container">
+                <li>Task 1<br>
+                    <span>Description 1</span></li>
+                <li>Task 2<br>
+                    <span>Description 2</span></li>
+                <li>Task 3<br>
+                    <span>Description 3</span></li>
+                <li>Task 4<br>
+                    <span>Descrption 4</span></li>
+                <li>Task 5<br>
+                    <span>Descrption 5</span></li>
+            </ul>
         </div>
     </div>
+    
 </body>
 
 </html>
